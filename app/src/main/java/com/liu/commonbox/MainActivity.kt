@@ -7,7 +7,9 @@ import com.liu.commonbox.base.BaseActivity
 class MainActivity : BaseActivity() {
 
 
-    override fun bindLayout(): Int = R.layout.activity_main
+    override fun bindLayout(): Int {
+        return R.layout.activity_main
+    }
 
     override fun initView() {
         //测试

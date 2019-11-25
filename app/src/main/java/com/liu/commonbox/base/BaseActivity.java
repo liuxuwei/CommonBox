@@ -34,7 +34,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 EventBus.getDefault().register(this);
             }
         }
-        mContext = this;
+
 
 
     }
