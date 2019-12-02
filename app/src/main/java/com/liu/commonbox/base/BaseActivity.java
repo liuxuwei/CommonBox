@@ -78,6 +78,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param msg
      */
     public void showToast(String msg) {
+        ToastUtils.cancelToast();
         ToastUtils.showShortToast(getApplicationContext(), msg);
     }
 

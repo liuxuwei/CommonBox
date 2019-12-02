@@ -41,4 +41,11 @@ public class ToastUtils {
         toast.show();
     }
 
+    public static void cancelToast() {
+        if (toast != null) {
+            toast.cancel();
+            toast = null;
+        }
+    }
+
 }
