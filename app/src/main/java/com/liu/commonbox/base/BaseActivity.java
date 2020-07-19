@@ -21,12 +21,11 @@ import org.greenrobot.eventbus.EventBus;
 public abstract class BaseActivity extends AppCompatActivity {
     protected Context mContext;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(bindLayout());
-
+        mContext = getApplicationContext();
         initView();
         initData();
         if (bindEvent()) {
@@ -69,17 +68,17 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 短时间提示
      * @param msgId 对应R.string.xxx
      */
-    public void showToast(int msgId) {
-        ToastUtils.showShortToast(getApplicationContext(), getApplicationContext().getString(msgId));
+    public void showToast(int msgId, int gravity) {
+        ToastUtils.showShortToast(getApplicationContext(), getApplicationContext().getString(msgId), gravity);
     }
 
     /**
      * 短时间提示
-     * @param msg
+     * @param msg 需要提示的消息
      */
-    public void showToast(String msg) {
+    public void showToast(String msg, int gravity) {
         ToastUtils.cancelToast();
-        ToastUtils.showShortToast(getApplicationContext(), msg);
+        ToastUtils.showShortToast(getApplicationContext(), msg, gravity);
     }
 
 
