@@ -63,7 +63,7 @@ class MainActivity : BaseActivity() {
     }
 
     override fun initData() {
-
+        LogUtils.d("init data")
     }
 
 
