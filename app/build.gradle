@@ -42,4 +42,5 @@ dependencies {
     implementation rootProject.ext.dependencies['EventBus']
     implementation rootProject.ext.dependencies['Retrofit']
     implementation rootProject.ext.dependencies['OkHttp']
+    implementation rootProject.ext.dependencies['Gson']
 }

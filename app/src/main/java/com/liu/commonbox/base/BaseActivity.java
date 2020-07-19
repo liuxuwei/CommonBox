@@ -43,9 +43,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      *
      * @return 是否绑定EventBus
      */
-    protected boolean bindEvent() {
-        return false;
-    }
+    protected  abstract boolean bindEvent();
 
     /**
      * 获取资源id

@@ -11,7 +11,7 @@ import android.util.Log;
 @SuppressWarnings("unused")
 public class LogUtils {
     private static final String TAG = "LogUtils";
-    private static boolean isDebuggable = false;
+    private static boolean isDebuggable = true;
 
     public static void d(String msg) {
         if (isDebuggable) {
