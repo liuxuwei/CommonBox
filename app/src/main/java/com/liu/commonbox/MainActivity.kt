@@ -64,6 +64,7 @@ class MainActivity : BaseActivity() {
 
     override fun initData() {
         LogUtils.d("init data")
+        LogUtils.d("测试不用密码提交")
     }
 
 
